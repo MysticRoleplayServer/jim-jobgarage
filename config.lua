@@ -27,7 +27,7 @@ Config = {
 	Menu = "qb",
 	Notify = "qb",
 
-	Fuel = "LegacyFuel", -- Set this to your fuel script folder
+	Fuel = "cdn-fuel", -- Set this to your fuel script folder
 
 	CarDespawn = true, -- Sends the vehicle to hell (removal animation)
 
@@ -35,54 +35,62 @@ Config = {
 
 	Locations = {
 		{ 	zoneEnable = true,
-			job = "mechanic",
+			job = "sadot",
 			garage = {
-				spawn = vec4(-179.34, -1285.27, 30.83, 89.24),  -- Where the car will spawn
-				out = vec4(-177.1, -1282.25, 31.3, 179.01),	-- Where the parking stand is
+				spawn = vec4(-20.86, -1680.49, 29.46, 109.41),
+				out = vec4(-15.31, -1677.42, 29.49, 143.0),
 				list = {
-					["cheburek"] = {
-						colors = { 136, 137 },
-						grade = 4,
-						livery = 5,
-						bulletproof = true,
-						extras = { 1, 4 },
-					},
-					["burrito3"] = { },
-				},
-			},
-		},
-		{ 	zoneEnable = true,
-			job = "police",
-			garage = {
-				spawn = vec4(435.41, -975.93, 25.31, 90.86),
-				out = vec4(441.39, -974.78, 25.7, 178.49),
-				list = {
-					["police"] = {
-						CustomName = "Police Car",
-						livery = 5,
-						extras = { 1, 2 },
+					["dot1"] = {
+						CustomName = "SADOT w/ Shovel",
+						extras = { 1, 2, 3, 4, 5, 7 },
 						performance = "max",
-						trunkItems = {
-							{ name = "heavyarmor", amount = 2, info = {}, type = "item", slot = 1, },
-							{ name = "empty_evidence_bag", amount = 10, info = {}, type = "item", slot = 2, },
-							{ name = "police_stormram", amount = 1, info = {}, type = "item", slot = 3, },
-						},
 					},
-					["fbi"] = {
-						rank = { 4 },
-						performance = { 2, 3, 3, 2, 4, true },
+					["dot2"] = {
+						CustomName = "SADOT w/o Shovel",
+						extras = { 1, 4, 5, 7 },
+						performance = "max",
 					},
 				},
 			},
 		},
 		{ 	zoneEnable = true,
-			job = "ambulance",
+			job = "government",
 			garage = {
-				spawn = vec4(294.95, -606.92, 43.24, 64.84),
-				out = vec4(294.54, -599.52, 43.28, 159.68),
+				spawn = vec4(-450.41, 1143.49, 318.08, 254.78),
+				out = vec4(-453.01, 1139.2, 318.08, 335.84),
 				list = {
-					["ambulance"] = {
-						CustomName = "Ambulance"
+					["iyremakerolls"] = {
+						CustomName = "Rolls Royce",
+						rank = { 3 },
+						performance = "max",
+					},
+				},
+			},
+		},
+		{ 	zoneEnable = true,
+			job = "government",
+			garage = {
+				spawn = vec4(151.8, 1232.85, 222.57, 89.33),
+				out = vec4(154.67, 1236.36, 222.67, 172.03),
+				list = {
+					["iyremakerolls"] = {
+						CustomName = "Rolls Royce",
+						rank = { 3 },
+						performance = "max",
+					},
+				},
+			},
+		},
+		{ 	zoneEnable = true,
+			job = "government",
+			garage = {
+				spawn = vec4(-411.19, 1175.41, 325.64, 253.41),
+				out = vec4(-408.66, 1171.2, 325.8, 351.93),
+				list = {
+					["iyremakerolls"] = {
+						CustomName = "Rolls Royce",
+						rank = { 3 },
+						performance = "max",
 					},
 				},
 			},
